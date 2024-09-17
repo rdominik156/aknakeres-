@@ -9,7 +9,7 @@ import time
 
 class Cell:
     all = []
-    cell_count = CELL_COUNT
+    cell_count = CELL_COUNT-MINES
     cell_count_label_object = None
     zeros = set()
     
@@ -45,7 +45,7 @@ class Cell:
                 self.repeat_show()                
 
         # Win
-        if Cell.cell_count == MINES:
+        if Cell.cell_count == 0:
             ctypes.windll.user32.MessageBoxW(0,"You won!", "Game over", 0)
             time.sleep(3)
             sys.exit()
