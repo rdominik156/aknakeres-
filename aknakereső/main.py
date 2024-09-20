@@ -8,7 +8,7 @@ root.geometry(f"{WIDTH}x{HEIGHT}")
 root.title("Aknakereső")
 root.resizable(False, False)
 
-image= ImageTk.PhotoImage(Image.open("D:\Programozás\VS gyakorlás\\aknakereső/zaszloa.png"))
+image= ImageTk.PhotoImage(Image.open("aknakereső/zaszloa.png"))
 
 
 # Frames

@@ -26,7 +26,7 @@ class Cell:
         Cell.all.append(self)
 
     def create_btm_object(self, location):
-        btn = Button(location, width=3, height=1, image="", bg="white")
+        btn = Button(location, width=3, height=1, image="", bg="#d3d3d3")
 
         btn.bind("<Button-1>", self.left_click)
         btn.bind("<Button-3>", self.right_click)
